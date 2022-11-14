@@ -1,0 +1,46 @@
+.organization-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0; 
+
+  & {
+    @include list();
+  }
+
+&__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+ &__svg {
+   display: flex;
+   justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: $third-bc-color;
+
+}
+
+&__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+  
+}
+
+&__text {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $secondary-text-color;
+    
+    
+}
+}
+

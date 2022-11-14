@@ -1,0 +1,49 @@
+
+.check-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $secondary-text-color;
+    cursor: pointer;
+
+&__link {
+    color: $accent-color;
+}
+
+&__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+&__input {
+    @include visually-hidden(); 
+}
+&__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $primary-text-color;
+    border-radius: 3px;
+}
+
+&__mark {
+    color: $third-text-color;
+}
+
+&__mark {
+    fill: currentColor;
+}
+
+&__input:checked + &__icon {
+    background-color: $accent-color;
+    border: none;
+    transition: 250ms $trannsition-function;
+}
+}

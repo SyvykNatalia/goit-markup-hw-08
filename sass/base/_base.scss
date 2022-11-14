@@ -1,0 +1,19 @@
+body {
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.03em;
+}
+ ul,
+ h1,
+ h2,
+ h3,
+ p {
+    margin: 0;
+    padding: 0;
+ }
+
+ img {
+    display: block;
+    width: 100%;
+   object-fit: cover;
+ }
+ 

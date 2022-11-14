@@ -1,0 +1,34 @@
+.work-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+
+& {
+        @include list();
+    }
+
+&__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+&__thumb {
+    position: relative;
+}
+
+&__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: $third-text-color;
+}
+}
