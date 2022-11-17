@@ -1,7 +1,8 @@
 .contact {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+
 & {
     @include list();
 }
@@ -37,4 +38,7 @@
 &__icon {
     fill: currentColor;
 }
+ @media (min-width: 768px) {
+     display: flex;
+ }
 }

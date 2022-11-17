@@ -13,9 +13,11 @@
     align-items: center;
 }
 &__list {
-    display: flex;
+    display: none;
     margin: 0;
-    
+    @media (min-width: 768px) {
+        display: flex;
+    }
     & {
         @include list();
     }
@@ -66,4 +68,16 @@
     border-radius: 2px;
 } 
 }
+&__burger-menu {
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+background-color: $fourth-bc-color;
+margin-left: 276px;
+@media (min-width: 768px) {
+    display: none;
+}
+}
+
 }

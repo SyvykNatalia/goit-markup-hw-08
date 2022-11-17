@@ -17,37 +17,40 @@
        (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url(../../images/work-Img@2x.jpg);
+                rgba(47, 48, 58, 0.4)), url(../images/work-Img@2x.jpg);
        }
 
     @media  screen and (max-width: 767px) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),url(../../images/work-mobile-\ img.jpg);
+        rgba(47, 48, 58, 0.4)),url(../images/work-mobile-img.jpg);
        width: 768px;
        height: 400px;
-  
-       
+       background-size: cover;
+       background-position: center;
+       padding-top: 118px;
+       padding-bottom: 118px;
       
-        
+      
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-         rgba(47, 48, 58, 0.4)), url(../../images/work-mobile-\ img@2x.jpg);
+         rgba(47, 48, 58, 0.4)), url(../images/work-mobile-img@2x.jpg);
         }
         }
         
-        @media screen and (min-width: 768px) and (max-widt: 1199px) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-             rgba(47, 48, 58, 0.4)), url(../../images/work-tablet-img.jpg);
+             rgba(47, 48, 58, 0.4)), url(../images/work-tablet-img.jpg);
              width: 768px;
              height: 400px;
+        
 
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                            rgba(47, 48, 58, 0.4)), url(../../images/work-tablet-img@2x.jpg);
+                            rgba(47, 48, 58, 0.4)), url(../images/work-tablet-img@2x.jpg);
             }
 }
 &__title {
@@ -62,8 +65,24 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $third-text-color;
+
+     @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      width: 360px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.6;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+     }
    }
 &__button {
     width: 216px;
+     @media (max-width: 767px) {
+        width: 200;
+     }
     }
 }
