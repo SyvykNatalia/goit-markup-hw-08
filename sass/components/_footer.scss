@@ -11,9 +11,11 @@
 
 &__social {
     display: block;
-   align-items: baseline;
+   text-align: center;
+
   @media (min-width: 768px) {
     display: flex;
+    align-items: baseline;
 }
 }
 
@@ -81,6 +83,7 @@ color: $accent-color;
     color: $third-text-color;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
  }
 &__soc-list__link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -88,6 +91,9 @@ color: $accent-color;
 }
  &__form {
      margin-left: 93px;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
     
 }
 

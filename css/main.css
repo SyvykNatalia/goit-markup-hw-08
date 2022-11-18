@@ -730,15 +730,16 @@ img {
 }
 .footer__social {
   display: block;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 .footer__adress {
@@ -811,6 +812,11 @@ img {
 }
 .footer__form {
   margin-left: 93px;
+}
+@media (max-width: 767px) {
+  .footer__form {
+    text-align: center;
+  }
 }
 .footer__form-text {
   margin-top: 0;
