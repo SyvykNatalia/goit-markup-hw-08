@@ -2,15 +2,26 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $primary-bc-color;
+    @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      
+    }
 
 
 &__social {
+    display: block;
+   align-items: baseline;
+  @media (min-width: 768px) {
     display: flex;
-    align-items: baseline;
+}
 }
 
 &__adress {
     margin-right: 94px;
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 }
 
 &__logo {
@@ -77,7 +88,8 @@ color: $accent-color;
 }
  &__form {
      margin-left: 93px;
- }
+    
+}
 
 &__form-text {
     margin-top: 0;
@@ -89,11 +101,13 @@ color: $accent-color;
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: $third-text-color;
-    
- }
+}
 
  &__field {
-     display: flex;
+     display: block;
+     @media (min-width: 768px) {
+        display: flex;
+     }
  }
 
  &__input {
@@ -104,6 +118,11 @@ color: $accent-color;
      border-radius: 4px;
      background-color: $primary-bc-color;
      outline: none;
+     @media (max-width: 767px) {
+        margin-bottom: 20px;
+        width: 450px;
+        height: 50px;
+     }
    
 &::placeholder {
     display: flex;

@@ -1,6 +1,11 @@
 .client-list {
     display: flex;
     gap: 30px;
+    
+
+    @media (max-width: 767px) {
+     flex-wrap: wrap;;
+    }
 
 & {
     @include list();

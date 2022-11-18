@@ -6,7 +6,11 @@
     font-size: 26px;
     line-height: 1.19;
     color: #000;
-  
+    @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+  }
 
 &__span {
     font-family: Raleway, sans-serif;
@@ -14,5 +18,10 @@
     font-size: 26px;
     line-height: 1.19;
     color: $accent-color;
+    @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    }
 }
 }
