@@ -4,7 +4,7 @@
     
 
     @media (max-width: 767px) {
-     flex-wrap: wrap;;
+     flex-wrap: wrap;
     }
 
 & {
@@ -30,6 +30,9 @@
 &:focus {
     border-color: $accent-color;
      color: $accent-color;
+}
+@media (max-width: 767px) {
+    width: 210px;
 }
 }
 &__icon {

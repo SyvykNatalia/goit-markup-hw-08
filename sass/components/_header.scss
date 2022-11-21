@@ -1,12 +1,13 @@
 .header {
-    background-color: $fourth-bc-color;
+   background-color: $fourth-bc-color;
     border-bottom: 1px solid #ECECEC;
 
 
 &__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
+  
 
 &__nav {
     display: flex;
@@ -76,6 +77,11 @@ border: none;
 background-color: $fourth-bc-color;
 margin-left: 276px;
 cursor: pointer;
+transition-duration: 250ms;
+transition-timing-function: $trannsition-function;
+&:hover {
+    color: $accent-color;
+}
 @media (min-width: 768px) {
     display: none;
 }

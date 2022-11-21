@@ -18,6 +18,11 @@
     right: 15px;
     border: none;
     background-color: $fourth-bc-color;
+    transition-duration: 250ms;
+    transition-timing-function: $trannsition-function;
+    &:hover {
+        color: $accent-color;
+    }
 }
 &__nav {
     margin-bottom: 302px;
@@ -75,7 +80,6 @@
 
 }
 &__soc-link {
-    margin-left: 10px;
     margin-right: 10px;
     font-weight: 500;
     font-size: 18px;
@@ -83,6 +87,9 @@
     letter-spacing: 0.02em;
     color: $accent-color;
     text-decoration: none;
+    &:not(:first-child) {
+     margin-left: 10px;
+    }
 }
 
 }

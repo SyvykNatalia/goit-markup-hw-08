@@ -6,9 +6,7 @@
   @media (max-width: 767px) {
     margin-bottom: 60px;
   }
-    
-
-& {
+  & {
     @include list();
 }
 &__link {

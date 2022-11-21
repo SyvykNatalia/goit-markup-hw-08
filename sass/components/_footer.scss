@@ -7,13 +7,15 @@
     &__social {
         display: flex;
         align-items: baseline;
-        @media (max-width: 767px) {
-            display: block;
-            text-align: center;
-     }
-    }
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        }
+     
+}
 
-    &__adress {
+   &__adress {
         margin-right: 94px;
         @media (max-width: 767px) {
             margin-bottom: 60px;
@@ -35,6 +37,7 @@
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
+        
     }
 
     &__mail {
@@ -89,7 +92,8 @@
 
     &__form {
         margin-left: 93px;
-    }
+       }
+         
 
     &__form-text {
         margin-top: 0;
@@ -101,14 +105,16 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $third-text-color;
-
-    }
+}
 
     &__field {
         display: flex;
         @media (max-width: 767px) {
-            flex-direction: column;
-}
+         display: block;
+         flex-direction: column;
+        text-align: center;
+    }
+ 
     }
 
     &__input {
@@ -142,6 +148,7 @@
         align-items: center;
         margin-left: 12px;
         gap: 12px;
+       
     }
-    
+   
 }
