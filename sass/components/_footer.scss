@@ -5,21 +5,30 @@
 
 
     &__social {
-        display: flex;
-        align-items: baseline;
-    @media (max-width: 767px) {
+        @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
         text-align: center;
-        }
+        justify-content: center; 
+        align-items: center;
+    }
+       
+    @media (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+}
      
 }
 
    &__adress {
-        margin-right: 94px;
-        @media (max-width: 767px) {
-            margin-bottom: 60px;
+     @media (max-width: 767px) {
+        margin-bottom: 60px;
         }
+            
+        @media (min-width: 1200px) {
+            margin-right: 94px;
+      
+       }
     }
 
     &__logo {
@@ -91,9 +100,11 @@
     }
 
     &__form {
+        width: 100%;
+        @media (min-width: 1200px) {
         margin-left: 93px;
        }
-         
+    }   
 
     &__form-text {
         margin-top: 0;
@@ -110,21 +121,21 @@
     &__field {
         display: flex;
         @media (max-width: 767px) {
-         display: block;
+         display: flex;
          flex-direction: column;
-        text-align: center;
-    }
- 
-    }
+        align-items: center;
+}
+}
 
     &__input {
-        width: 358px;
+        width: 100%;
+        margin-bottom: 20px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: $primary-bc-color;
-        outline: none;
+        outline: none; 
 
         &::placeholder {
             display: flex;
@@ -137,18 +148,24 @@
             background-color: $primary-bc-color;
 
         }
-        @media (max-width: 767px) {
-          margin-bottom: 20px;
+        @media (min-width: 1200px) {
+        width: 358px;
+        height: 50px;
         }
+            
     }
 
     &__button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 12px;
         gap: 12px;
+   @media (min-width: 1200px) {
+    margin-left: 12px;
+   }
        
     }
-   
+   &__soc-list__margin {
+    margin-bottom: 60px;
+   }
 }

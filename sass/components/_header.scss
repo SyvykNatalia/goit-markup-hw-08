@@ -6,13 +6,21 @@
 &__box {
     display: flex;
     justify-content: space-between; 
+    
 }
   
 
 &__nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+   
+    @media (min-width: 1200px) {
+     display: flex;
+     align-items: center;
+    }
 }
+
 &__list {
     display: none;
     margin: 0;
@@ -75,7 +83,6 @@ align-items: center;
 justify-content: center;
 border: none;
 background-color: $fourth-bc-color;
-margin-left: 276px;
 cursor: pointer;
 transition-duration: 250ms;
 transition-timing-function: $trannsition-function;
