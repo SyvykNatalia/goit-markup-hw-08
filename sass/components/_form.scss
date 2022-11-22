@@ -15,7 +15,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         width: 370px;
     }
     
@@ -69,7 +69,7 @@
     resize: none;
     outline: none;
     transition: 250ms $trannsition-function;
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
      width: 370px;
     }
   

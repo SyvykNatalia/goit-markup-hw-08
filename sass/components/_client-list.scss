@@ -3,14 +3,28 @@
     gap: 30px;
 
     @media (max-width: 767px) {
-     flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
     }
-
+@media (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    gap: 30px;
+}
 & {
     @include list();
 }
 &__item {
-    flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 150px) / 6);
+}
+&__item {
+    @media (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+    }
+}
+&__item {
+@media (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 60px) / 3 );
+}
 }
 
 &__link {
@@ -24,17 +38,22 @@
     color: #AFB1B8;
     transition-duration: 250ms;
     transition-timing-function: $trannsition-function;
+    @media (max-width: 767px) {
+        width: 210px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 226px;
+    }
 
 &:hover,
 &:focus {
     border-color: $accent-color;
      color: $accent-color;
 }
-@media (max-width: 767px) {
-    width: 210px;
-}
+
 }
 &__icon {
     fill: currentColor;
 }
+
 }

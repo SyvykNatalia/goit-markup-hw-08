@@ -10,7 +10,7 @@
       border-radius: 4px;
       transform: scale(1) translate(-50%, -50%);
       transition: transform 250ms $trannsition-function;
-      @media (max-width: 767px) {
+      @media (max-width: 1199px) {
         width: 450px;
         height: 609px;
       }
@@ -43,7 +43,7 @@
       line-height: 1.15;
       text-align: center;
       color: $primary-text-color;
-      @media (max-width: 767px) {
+      @media (max-width: 1199px) {
       width: 370px;
      margin-left: auto;
      margin-right: auto;

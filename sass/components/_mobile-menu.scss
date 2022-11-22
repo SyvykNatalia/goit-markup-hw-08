@@ -8,7 +8,8 @@
     background-color: $fourth-bc-color;
     padding: 40px;
     z-index: 1;
-    
+
+ 
     &.is-open {
      display: block;
     }
@@ -25,7 +26,7 @@
     }
 }
 &__nav {
-    margin-bottom: 302px;
+ margin-bottom: 470px;
 }
 &__list {
     @include list();
