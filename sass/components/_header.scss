@@ -91,7 +91,8 @@ background-color: $fourth-bc-color;
 cursor: pointer;
 transition-duration: 250ms;
 transition-timing-function: $trannsition-function;
-&:hover {
+&:hover,
+&:focus {
     color: $accent-color;
 }
 @media (min-width: 768px) {

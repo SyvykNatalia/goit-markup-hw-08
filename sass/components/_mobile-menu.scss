@@ -21,7 +21,8 @@
     background-color: $fourth-bc-color;
     transition-duration: 250ms;
     transition-timing-function: $trannsition-function;
-    &:hover {
+    &:hover,
+    &:focus {
         color: $accent-color;
     }
 }

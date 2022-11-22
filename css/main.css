@@ -281,7 +281,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__burger-menu:hover {
+.header__burger-menu:hover, .header__burger-menu:focus {
   color: #2196F3;
 }
 @media (min-width: 768px) {
@@ -471,6 +471,7 @@ img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/work-tablet-img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/work-tablet-img.jpg);
     width: 768px;
+    max-width: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -1135,17 +1136,6 @@ img {
 .footer__soc-list__margin {
   margin-bottom: 60px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 60px;
-  }
-}
 
 .backdrop {
   position: fixed;
@@ -1627,7 +1617,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu__close-button:hover {
+.mobile-menu__close-button:hover, .mobile-menu__close-button:focus {
   color: #2196F3;
 }
 .mobile-menu__nav {
