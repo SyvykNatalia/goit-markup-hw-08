@@ -1,6 +1,7 @@
  .cards {
-     margin-top: 0;
-     margin-bottom: 0;
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
 
      & {
         @include list();

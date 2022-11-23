@@ -1,6 +1,11 @@
 .portfolio-filters {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center; }
 
     & {
         @include list();
@@ -11,8 +16,10 @@
 }
 
 &__item:not(:last-child) {
-    margin-right: 8px;
+    @media (min-width: 1200px) {
+    margin-right: 8px;}
 }
+
 
 &__button {
     padding: 6px 22px;
@@ -40,7 +47,9 @@
     }
     }
 &__button {
+    @media (min-width: 1200px) {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px; }
 }
+
 }
