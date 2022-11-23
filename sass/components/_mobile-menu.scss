@@ -3,10 +3,12 @@
     top: 0;
     left: 0;
     display: none;
-    width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: $fourth-bc-color;
     z-index: 1;
+    overflow: auto;
+
 
     &__container {
         position: relative;
