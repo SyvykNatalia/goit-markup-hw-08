@@ -36,14 +36,14 @@
         </nav>
         <ul class="contact list">
            <li class="contact__item"> 
-            <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon icon-mail">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a> 
           </li>
           <li class="contact__item"> 
-            <a href="tel:+380961111111" class="contact__link tel"><svg class="contact__icon" width="16" height="12">
+            <a href="tel:+380961111111" class="contact__link tel"><svg class="contact__icon icon-phone" >
               <use href="./images/symbol-defs.svg#icon-smartphone1"></use>
-            </svg>+380961111111</a>
+            </svg>+38 096 111 11 11</a>
           </li>
         </ul>
         </div>
@@ -74,8 +74,29 @@
             <li class="cards__item">
               <a href="" class="cards__link">
                  <div class="cards__thumb">
-                <img src="./images/img5/img1.jpg" alt="ноутбук" width="370"/> 
-                <div class="cards__overlay">
+                  <source
+                  srcset="
+                   ./images/img5/desktop-img1.jpg 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img5/tablet-img1.jpg 1x
+                   "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img1.jpg 1x
+                   "
+                />
+                <img
+                  class="image"
+                  src="./images/img5/mobile-img1.jpg"
+                  alt="ноутбук"
+                />
+                 <div class="cards__overlay">
                 <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                </div>
                 <div class="cards__paddings">
@@ -86,11 +107,29 @@
             <li class="cards__item">
               <a href="" class="cards__link">
                 <div class="cards__thumb">
+                  <source
+                  srcset="
+                   ./images/img2/desktop-img2.jpg 1x,
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img2.jpg 1x,
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img2.jpg 1x,
+                    "
+                />
                 <img
-                  src="./images/img5/img2.jpg"
+                  class="image"
+                  src="./images/img5/mobile-img2.jpg"
                   alt="баскетбол"
-                  width="370"/>
-                  <div class="cards__overlay">
+                />
+                <div class="cards__overlay">
                 <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
                  <div class="cards__paddings">
@@ -101,10 +140,28 @@
             <li class="cards__item">
               <a href="" class="cards__link"> 
                 <div class="cards__thumb">
-                  <img src="./images/img5/img3.jpg"
-                  alt="назва ресторану"
-                  width="370"/>
-                     <div class="cards__overlay">
+                  <source
+                  srcset="
+                   ./images/img2/desktop-img3.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img3.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img3.jpg 1x
+                    "
+                />
+                <img
+                  class="image"
+                  src="./images/img5/mobile-img3.jpg"
+                  alt="назва ресторану">
+                 <div class="cards__overlay">
                 <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
                  <div class="cards__paddings">
@@ -115,10 +172,26 @@
             <li class="cards__item">
               <a href="" class="cards__link">
                   <div class="cards__thumb">
-                <img
-                  src="./images/img5/img4.jpg"
-                  alt="навушники"
-                  width="370"/>
+                    <source
+                  srcset="
+                   ./images/img5/desktop-img4.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img4.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img4.jpg 1x
+                    "
+                />
+                <img class="image"
+                  src="./images/img5/mobile-img4.jpg"
+                  alt="навушники"/>
                  <div class="cards__overlay">
                    <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 </div>
@@ -130,7 +203,26 @@
             <li class="cards__item">
               <a href="" class="cards__link"
                 ><div class="cards__thumb">
-                <img src="./images/img5/img5.jpg" alt="коробки" width="370" />
+                      <source
+                  srcset="
+                   ./images/img5/desktop-img5.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img5.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img5.jpg 1x
+                    "
+                />
+                <img class="imge" 
+                src="./images/img5/mobile-img5.jpg" 
+                alt="коробки" />
                 <div class="cards__overlay">
                 <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
               </div>
@@ -142,7 +234,26 @@
             <li class="cards__item">
               <a href="" class="cards__link"> 
                 <div class="cards__thumb">
-                  <img src="./images/img5/img6.jpg" alt="монітор" width="370" />
+                        <source
+                  srcset="
+                   ./images/img5/desktop-img6.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img6.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img6.jpg 1x
+                    "
+                />
+                  <img class="image"
+                  src="./images/img5/mobile-img6.jpg" 
+                  alt="монітор" />
                   <div class="cards__overlay">
                  <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                  </div>
@@ -154,7 +265,26 @@
             <li class="cards__item">
               <a href="" class="cards__link"
                 ><div class="cards__thumb">
-                <img src="./images/img5/img7.jpg" alt="журнал" width="370" />
+                   <source
+                  srcset="
+                   ./images/img5/desktop-img7.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img7.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img7.jpg 1x
+                    "
+                />
+                <img class="image"
+                src="./images/img5/mobile-img7.jpg" 
+                alt="журнал"/>
                 <div class="cards__overlay">
                 <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
               </div>
@@ -166,7 +296,26 @@
             <li class="cards__item">
               <a href="" class="cards__link"
                 ><div class="cards__thumb">
-                <img src="./images/img5/img8.jpg" alt="бірка" width="370" />
+                  <source
+                  srcset="
+                   ./images/img5/desktop-img8.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img8.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img8.jpg 1x
+                    "
+                />
+                <img class="image"
+                src="./images/img5/mobile-img8.jpg" 
+                alt="бірка"/>
                <div class="cards__overlay">
                 <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
               </div>
@@ -177,11 +326,28 @@
             </li>
             <li class="cards__item">
               <a href="" class="cards__link"
-                > <div class="cards__thumb"><img
-                  src="./images/img5/img9.jpg"
-                  alt="руки друкують"
-                  width="370"/>  
-                   <div class="cards__overlay">
+                > <div class="cards__thumb">
+                       <source
+                  srcset="
+                   ./images/img5/desktop-img9.jpg 1x
+                   "
+                  media="(min-width: 1200px)"
+                />
+               <source
+                  srcset="
+                    ./images/img2/tablet-img9.jpg 1x
+                    "
+                  media="(min-width: 768px)"
+                />
+             <source
+                  srcset="
+                     ./images/img5/mobile-img9.jpg 1x
+                    "
+                />
+                <img class="image"
+                src="./images/img5/mobile-img9.jpg" 
+                alt="руки друкують"/>
+                 <div class="cards__overlay">
                   <p class="cards__label">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> 
                 </div>
                   <div class="cards__paddings">
@@ -245,6 +411,39 @@
           </div>
           </div>
         </footer>
-         
+        <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu__container">
+         <button class="mobile-menu__close-button js-close-menu"><svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+        </svg></button>
+     <ul class="mobile-menu__nav">
+            <li class="mobile-menu__item">
+             <a href="./index.html" class="mobile-menu__link">Студія</a></li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфоліо</a></li>
+            <li class="mobile-menu__item"> 
+              <a href="" class="mobile-menu__link">Контакти</a></li>
+          </ul>
+        <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts-item">
+           <a href="tel:+380961111111" class="mobile-menu__contacts-link mobile-menu__contacts-link__color ">+380961111111</a>
+          </li>
+          <li class="mobile-menu__contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__soc-list">
+          <li class="mobile-menu__soc-item">
+            <a href="" class="mobile-menu__soc-link">Instagram</a><span class="mobile-menu__line"></span></li>
+          <li class="mobile-menu__soc-item">
+            <a href="" class="mobile-menu__soc-link">Twitter</a><span class="mobile-menu__line"></span></li>
+          <li class="mobile-menu__soc-item">
+            <a href="" class="mobile-menu__soc-link">Facebook</a><span class="mobile-menu__line"></span></li>
+          <li class="mobile-menu__soc-item">
+            <a href="" class="mobile-menu__soc-link">LinkedIn</a><span class="mobile-menu__line"></span></li>
+        </ul>
+      </div>
+      </div>
+       <script src="./js/mobile-menu.js"></script>  
   </body>
 </html>

@@ -1,11 +1,16 @@
 .portfolio-filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-
+    gap: 15px 8px;
+    margin-bottom: 40px;
+@media (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+}
     @media (min-width: 1200px) {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 50px;
+ }
 
     & {
         @include list();
@@ -14,12 +19,6 @@
 .portfolio-filters {
     font-family: inherit;
 }
-
-&__item:not(:last-child) {
-    @media (min-width: 1200px) {
-    margin-right: 8px;}
-}
-
 
 &__button {
     padding: 6px 22px;
@@ -49,7 +48,7 @@
 &__button {
     @media (min-width: 1200px) {
     margin-top: 0;
-    margin-bottom: 50px; }
+   }
 }
 
 }

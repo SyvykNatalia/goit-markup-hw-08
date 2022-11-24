@@ -86,6 +86,8 @@
 &__soc-list {
     @include list();
     display: flex;
+    @media (max-width: 479px) {
+    flex-wrap: wrap;}
  }
 &__soc-item {
     display: flex;
