@@ -64,11 +64,12 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
     text-transform: uppercase;
     color: $third-text-color;
 
-     @media (max-width: 767px) {
+     @media (max-width: 1199px) {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 30px;
       width: 100%;
+      max-width: 360px;
       font-weight: 900;
       font-size: 26px;
       line-height: 1.6;
@@ -76,6 +77,9 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
       letter-spacing: 0.06em;
       text-transform: uppercase;
      }
+    //  @media (min-width: 768px) and (max-width: 1199px) {
+    
+    //  }
    }
 &__button {
     width: 216px;

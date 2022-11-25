@@ -15,9 +15,7 @@ display: flex;
     @include list();
   }
 
-&__item:not(:last-child) {
-   margin-bottom: 30px;
-}
+
 &__item {
   @media (min-width: 768px) and (max-width: 1199px) {
   flex-basis: calc((100% - 30px) / 2);
@@ -53,7 +51,7 @@ display: flex;
     text-transform: uppercase;
     color: #212121;
   @media (max-width: 767px) {
-    margin-bottom: 10px;
+   text-align: center;
   }
 }
 
